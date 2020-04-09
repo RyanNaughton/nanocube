@@ -1,0 +1,223 @@
+html,body,#nc {
+    height:100%;
+    width:100%;
+    margin:0;
+    font: 10pt Lato, sans-serif;
+}
+
+canvas {
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+#time-overlay{
+    position:absolute;
+    max-width:65%;
+    max-height:20%px;
+    bottom: 1em;
+    left: 1ch;
+    padding:1em;
+    border: 0;
+}
+
+#cat-overlay{
+    position:absolute;
+    max-width:100%;
+    max-height:85%;
+    top: 1em;
+    right: 1em;
+    padding:1em;
+    border: 0;
+    overflow-y:auto;
+}
+
+#fixed-overlay{
+    position:absolute;
+    max-width:100%;
+    max-height:85%;
+    top: 2em;
+    left: 7ch;
+    border: 0;
+    overflow-y:auto;
+}
+
+#datatable-overlay{
+    display:none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#datatable{
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    margin: 0 auto;
+    position: relative;
+    background-color:white;
+    overflow: auto;
+}
+
+#datatable table{
+    border-collapse: collapse;
+}
+#datatable th{
+  background-color: #00a8e0;
+  color: white;
+}
+#datatable td, #datatable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#datatable tr:nth-child(even){background-color: #f2f2f2;}
+#datatable tr:hover {background-color: #ddd;}
+
+
+.map-overlay{
+    position:absolute;
+    height:100%;
+    width:100%;
+    margin:0;
+    z-index:0;
+}
+
+.resize-drag{
+    padding: 5px;
+}
+
+.barchart{
+    position: relative;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background-color: #555;
+    margin: 5px;
+    pointer-events:visible;
+    border: 1px solid white;
+}
+
+.timeseries{
+    position: relative;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    float:left;
+    background-color: #555;
+    margin: 5px;
+    border: 1px solid white;
+    pointer-events:visible;
+}
+
+.axis path,
+.axis line{
+    fill: none;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+.axis line{
+    stroke-opacity:0.5;
+}
+
+.axis text {
+    fill: #fff;
+    stroke:none;
+}
+
+text {
+    fill: #fff;
+    stroke:none;
+}
+
+.leaflet-container {
+}
+
+.leaflet-control-layers-overlays i { 
+    width: 1em;
+    height: 1em;               
+    float: right;
+    margin-top: 2px;
+    margin-left: 5px;
+    top: 1px;
+}
+
+.maptitle {
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+
+.legend {
+    line-height:  18px;
+    color: #555
+}
+
+.legend i{
+    width:  18px;
+    height: 18px;
+    float:  left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.legendinfo{
+    padding: 5px 5px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: #555;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    cursor:  pointer;
+    padding: 1ch 1em;
+    opacity: 1.0;
+    margin:  1px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #aaa;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ddd;
+    color:black;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+}
+
+.timeseries button,
+.barchart button{
+    float: right;
+}
+
+.dropdownlist {
+    position: absolute;
+    float: left;
+    left: 10ch;
+    top:  1em;
+    z-index:1000;
+}
+
+
+#btns a{
+    z-index:1000;
+    background:white;
+    color:black;
+    margin:1px;
+    padding:6px;
+    border-radius:4px;
+    cursor: default;
+    text-decoration:none;
+}
